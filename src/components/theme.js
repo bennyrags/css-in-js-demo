@@ -1,7 +1,8 @@
 
 export default {
-backgroundImage: 'linear-gradient(blue,green)',
+backgroundImage: 'linear-gradient(45deg,aquamarine,tomato)',
 color:'white',
 height:'100vh',
-display:'flex'
+display:'flex',
+flexDirection: 'column'
 }

@@ -4,13 +4,13 @@
 import React from 'react';
 import {css, jsx} from '@emotion/core'
 
-const FormHeader = () => {
+const FormHeader = (props) => {
 
     return (
         <h2 css={{
             textAlign:'center',
             margin: '1rem 0',
-            color: 'green'
+            color: 'DarkCyan'
         }}>
             Fill out this form!
         </h2>

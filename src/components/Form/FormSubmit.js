@@ -6,13 +6,16 @@ const styles = {
     margin: '1rem auto',
     padding: '.35rem 1rem',
     background: 'initial',
-    border: `1px solid green`
+    color:'white',
+    border:'2px solid white',
+    fontSize: '1rem'
+
 }
 
 const FormSubmit = (props) => {
     return (
         <button style={styles}>
-            Submit
+            Submit 
         </button>
     )
 }
