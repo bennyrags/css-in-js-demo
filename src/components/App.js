@@ -2,24 +2,36 @@
 
 import React from 'react';
 import { jsx } from '@emotion/core'
-import { ThemeProvider} from 'emotion-theming';
+import styled from '@emotion/styled'
+import { ThemeProvider } from 'emotion-theming';
 import Header from './Header/Header'
 import Form from './Form/Form'
-import theme from './theme';
+
+const theme = {
+  background: 'linear-gradient(45deg,aquamarine,tomato)',
+  color: 'white',
+  height: '100vh',
+  display: 'flex',
+  flexDirection: 'column',
+}
+
+const Main = styled.main` 
+  ${theme}
+  padding:1rem;
+  background: darkgrey;
+`
 
 
-class App extends React.Component {
-
- render() {
+const App = () => {
   return (
-<ThemeProvider theme={theme}>
-<main css={theme}>
-<Header/>
-<Form />
-</main>
-</ThemeProvider>
+    <ThemeProvider theme={theme}>
+      <Main>
+        <Header />
+        <Form />
+      </Main>
+    </ThemeProvider>
   )
 }
-}
+
 
 export default App;

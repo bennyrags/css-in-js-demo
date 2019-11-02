@@ -12,7 +12,7 @@ const H1 = styled.h1`
 padding-left:.25rem;
 font-size: 4rem;
 white-space:nowrap;
-color: ${props=>props.theme.color};
+color: rgba(211,106,194);
 `
 
 const Header = () => {
